@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+ font-family: "Nunito", serif;
+ font-optical-sizing: auto;
+}
+
+body {
+ background: linear-gradient(-20deg, #dc8564, #d76a74, #885ca4, #bcacd4 );
+ background-size: 400% 400%;
+ animation: gradient 10s ease infinite;
+}
+
+.catBg {
+ background: linear-gradient(-20deg, #dc8564, #d76a74, #885ca4, #bcacd4 );
+ background-size: 400% 400%;
+ animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+ 0% {
+  background-position: 0% 50%;
+ }
+ 50% {
+  background-position: 60% 70%;
+ }
+ 100% {
+  background-position: 0% 50%;
+ }
+}
+
+.rainbow {
+ animation: colorRotate 10s linear 0s infinite;
+}
+
+@keyframes colorRotate {
+ from {
+  color: #6666ff;
+ }
+ 10% {
+  color: #0099ff;
+ }
+ 50% {
+  color: #00ff00;
+ }
+ 75% {
+  color: #ff3399;
+ }
+ 100% {
+  color: #6666ff;
+ }
+}
