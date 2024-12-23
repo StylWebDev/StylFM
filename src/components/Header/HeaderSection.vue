@@ -13,7 +13,7 @@ const i = ref(Math.floor(Math.random() * 3));
       </h1>
       <p class="text-2xl font-semibold">Your LOFI Radio, Your Relief</p>
     </hgroup>
-    <div class="p-14  rounded-full catBg w-72 max-md:w-44 max-lg:w-56">
+    <div class="p-14  rounded-full catBg w-fit">
       <Transition  appear enter-from-class="opacity-0" enter-active-class="transition-all duration-500 ease-in">
         <img draggable="false" v-if="i===1" src="../../assets/cat1.webp" alt="" class="w-72 max-md:w-44 max-lg:w-56">
         <img draggable="false" v-else-if="i===2" src="../../assets/cat3.webp" alt="" class="w-72 max-md:w-44 max-lg:w-56">
