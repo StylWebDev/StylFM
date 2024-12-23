@@ -7,7 +7,7 @@ const {artists} = useAudioPlayerStore() ;
 
 <template>
   <div class="">
-    <p class="capitalize max-md:text-xl max-xl:text-2xl 2xl:text-2xl font-extrabold text-lime-300 min-[1921px]:text-4xl min-[1921px]:mt-4  text-center">
+    <p class="capitalize max-md:text-xl max-xl:text-2xl xl:text-2xl font-extrabold text-lime-300 min-[1921px]:text-4xl min-[1921px]:mt-4  text-center">
       shout out to Our Artists For Their beautiful content
     </p>
     <GridMinified columns="1" sm-columns="2"  md-columns="2" xl-columns="4"  items="center" justify="around" class="mt-3">
