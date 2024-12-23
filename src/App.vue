@@ -6,7 +6,7 @@ import TheFooter from "./components/TheFooter.vue";
 </script>
 
 <template>
-  <FlexMinified :column="true" xl-gap-y="12">
+  <FlexMinified :column="true" gap-y="8" xl-gap-y="4" >
    <TheHeader/>
     <Artists/>
     <TheFooter class="hidden max-sm:block" />

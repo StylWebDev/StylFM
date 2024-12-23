@@ -11,7 +11,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <FlexMinified :column="true" :md-row="true" sm-justify="center" justify="center" items="center" class=" w-full mb-4 max-sm:text-center" gap-x="14">
+  <FlexMinified :column="true" :md-row="true" sm-justify="center" justify="center" items="center" class=" w-full mb-4 max-md:text-center" gap-x="14" gap-y="4">
     <hgroup>
       <h1 class="text-6xl font-bold rainbow">
         StylFM

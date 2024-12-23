@@ -8,7 +8,7 @@ import AudioPlayer from "./AudioPlayer.vue";
 
 <template>
   <header class="top-0 w-full bg-neutral-800/75 h-fit rounded-b-lg shadow-neutral-800/80 shadow-lg  text-white">
-    <FlexMinified :column="true" items="center" class="py-5 overflow-visible overscroll-none">
+    <FlexMinified :column="true" items="center" class="pt-4 pb-2 overflow-visible overscroll-none">
       <Navbar/>
       <HeaderSection/>
       <AudioPlayer/>

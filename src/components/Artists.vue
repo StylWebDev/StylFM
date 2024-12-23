@@ -6,11 +6,11 @@ const {artists} = useAudioPlayerStore();
 </script>
 
 <template>
-  <div>
-    <p class="capitalize text-xl font-extrabold text-lime-300  text-center">
+  <div class="max-xl:mb-3">
+    <p class="capitalize max-md:text-xl max-xl:text-2xl 2xl:text-2xl font-extrabold text-lime-300 min-[1921px]:text-4xl min-[1921px]:mt-4  text-center">
       shout out to Our Artists For Their beautiful content
     </p>
-    <GridMinified columns="1" sm-columns="2"  md-columns="2" lg-columns="4" items="center" justify="around" class="mt-3" gap-y="5">
+    <GridMinified columns="1" sm-columns="2"  md-columns="2" xl-columns="4"  items="center" justify="around" class="mt-3" gap-y="5">
       <TransitionGroup
           appear appear-active-class="transition-all duration-500 ease-in"
           enter-from-class="opacity-0 scale-0" enter-active-class="transition-all duration-500 ease-in"
@@ -22,12 +22,14 @@ const {artists} = useAudioPlayerStore();
             v-for="(artist,index) in artists"
             :key="index+1"
         >
-          <h4 class="text-center text-white text-lg font-bold">{{artist.name}}</h4>
+          <h4 class="text-center text-lg  font-extrabold max-xl:text-2xl min-[1921px]:text-3xl"
+            :class="artist.color"
+          >{{artist.name}}</h4>
           <a :href="artist.href" :aria-label="artist.name" target="_blank">
             <img aria-hidden="false"
                  draggable="false"
                  loading="lazy"
-                 class="size-44 rounded-full "
+                 class=" max-sm:size-60 min-[1921px]:size-72 sm:size-56 lg:size-60 2xl:size-44 rounded-full hover:animate-pulse"
                  :src="artist.src" data-testid="card-image"  :alt="artist.name + '_Logo'">
           </a>
         </FlexMinified>
