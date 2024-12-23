@@ -8,8 +8,8 @@ import {useAudioPlayerStore} from "../store/audioPlayer.js";
 const audioPlayerStore = useAudioPlayerStore();
 
 onMounted(() => {
-  audioPlayerStore.audio.src = '/music.mp3';
-  audioPlayerStore.audio.type = 'audio/mp3';
+  audioPlayerStore.audio.src = audioPlayerStore.audioTracks[audioPlayerStore.randTrack];
+  audioPlayerStore.audio.type = 'audio/mpeg';
   audioPlayerStore.audio.loop = true;
 })
 

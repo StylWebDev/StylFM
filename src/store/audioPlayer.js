@@ -3,9 +3,10 @@ import {defineStore} from "pinia";
 export const useAudioPlayerStore = defineStore('audioPlayer', {
     state() {
         return {
-            audio: new Audio(),
+            audio: new Audio('https://drive.usercontent.google.com/download?id=1nqc5yMB_F1WcdnSGCt19VCweBA3QMr09&export=download&authuser=0&confirm=t&uuid=14f65da3-fa2e-4906-ba92-067602d218bf&at=APvzH3ruqLEtDeFqvpmzWsgWH0dB:1734953323293'),
             isPaused: true,
             isNotOpen: true,
+            randTrack: Math.floor(Math.random() * 3) + 1,
             firstPlay: true,
             artists: [
                 {
@@ -32,13 +33,27 @@ export const useAudioPlayerStore = defineStore('audioPlayer', {
                     href: 'https://open.spotify.com/artist/4AguL7db3ln1rGY2JqpzBQ',
                     color: "text-white"
                 }
+            ],
+            audioTracks: [
+                {
+                    url: '',
+                    duration: 5065
+                },
+                {
+                    url: '',
+                    duration: 3738
+                },
+                {
+                    url: '',
+                    duration: 3719
+                }
             ]
         }
     },
     actions: {
         play() {
             if (this.firstPlay) {
-                this.audio.currentTime = Math.floor(Math.random() * 12600) + 1;
+                this.audio.currentTime = Math.floor(Math.random() * this.audioTracks[this.randTrack].duration) + 1
                 this.firstPlay= false;
             }
             this.audio.play();
