@@ -8,7 +8,7 @@ import TheFooter from "./components/TheFooter.vue";
 <template>
   <FlexMinified :column="true"  xl-gap-y="4" >
    <TheHeader/>
-    <Artists class="mt-8"/>
+    <Artists class="mt-8 xl:mt-3"/>
     <TheFooter class="sm:hidden" />
   </FlexMinified>
 </template>
