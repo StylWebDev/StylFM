@@ -1,7 +1,7 @@
 <script setup>
 import Links from "./Links.vue";
 import GridMinified from "./GridMinified.vue";
-import FlexMinified from "./FlexMinified.vue";
+import FlexMinified from "./FlexMinified.vue" ;
 </script>
 
 <template>

@@ -2,7 +2,7 @@
 import {useAudioPlayerStore} from "../store/audioPlayer.js";
 import GridMinified from "./GridMinified.vue";
 import FlexMinified from "./FlexMinified.vue";
-const {artists} = useAudioPlayerStore();
+const {artists} = useAudioPlayerStore() ;
 </script>
 
 <template>
