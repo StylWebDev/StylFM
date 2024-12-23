@@ -1,5 +1,4 @@
 <script setup>
-
 import Links from "../Links.vue";
 import FlexMinified from "../FlexMinified.vue";
 </script>
@@ -18,7 +17,3 @@ import FlexMinified from "../FlexMinified.vue";
     </FlexMinified>
   </FlexMinified>
 </template>
-
-<style scoped>
-
-</style>

@@ -1,18 +1,9 @@
 <script setup>
-
 import FlexMinified from "./FlexMinified.vue";
 import {Icon} from "@iconify/vue";
-import {onMounted} from "vue";
 import {useAudioPlayerStore} from "../store/audioPlayer.js";
 
 const audioPlayerStore = useAudioPlayerStore();
-
-onMounted(() => {
-  audioPlayerStore.audio.src = audioPlayerStore.audioTracks[audioPlayerStore.randTrack];
-  audioPlayerStore.audio.type = 'audio/mpeg';
-  audioPlayerStore.audio.loop = true;
-})
-
 </script>
 
 <template>
@@ -57,7 +48,3 @@ onMounted(() => {
     />
   </FlexMinified>
 </template>
-
-<style scoped>
-
-</style>

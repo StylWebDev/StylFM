@@ -16,7 +16,3 @@ const linkList = ref<any[]>([{href:`https://www.linkedin.com/in/konstantinos-sty
       </a>
     </Grid>
 </template>
-
-<style scoped>
-
-</style>

@@ -1,5 +1,6 @@
 # Logs
 ./public/music.mp3
+.env
 logs
 *.log
 npm-debug.log*

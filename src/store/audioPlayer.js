@@ -6,7 +6,7 @@ export const useAudioPlayerStore = defineStore('audioPlayer', {
             audio: new Audio('https://drive.usercontent.google.com/download?id=1nqc5yMB_F1WcdnSGCt19VCweBA3QMr09&export=download&authuser=0&confirm=t&uuid=14f65da3-fa2e-4906-ba92-067602d218bf&at=APvzH3ruqLEtDeFqvpmzWsgWH0dB:1734953323293'),
             isPaused: true,
             isNotOpen: true,
-            randTrack: Math.floor(Math.random() * 3) + 1,
+            randTrack: Math.floor(Math.random() * 3),
             firstPlay: true,
             artists: [
                 {
@@ -36,15 +36,15 @@ export const useAudioPlayerStore = defineStore('audioPlayer', {
             ],
             audioTracks: [
                 {
-                    url: '',
+                    url: import.meta.env.VITE_TRACK_URL1,
                     duration: 5065
                 },
                 {
-                    url: '',
+                    url: import.meta.env.VITE_TRACK_URL2,
                     duration: 3738
                 },
                 {
-                    url: '',
+                    url: import.meta.env.VITE_TRACK_URL3,
                     duration: 3719
                 }
             ]
@@ -53,7 +53,10 @@ export const useAudioPlayerStore = defineStore('audioPlayer', {
     actions: {
         play() {
             if (this.firstPlay) {
-                this.audio.currentTime = Math.floor(Math.random() * this.audioTracks[this.randTrack].duration) + 1
+                this.audio.src  = this.audioTracks[this.randTrack].url;
+                this.audio.type = 'audio/mpeg';
+                this.audio.loop = true;
+                this.audio.currentTime = Math.floor(Math.random() * this.audioTracks[this.randTrack].duration) + 1;
                 this.firstPlay= false;
             }
             this.audio.play();

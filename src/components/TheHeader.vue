@@ -15,7 +15,3 @@ import AudioPlayer from "./AudioPlayer.vue";
     </FlexMinified>
   </header>
 </template>
-
-<style scoped>
-
-</style>

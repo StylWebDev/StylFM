@@ -21,14 +21,10 @@ onMounted(() => {
     <div class="w-fit p-14  rounded-full catBg">
       <Transition enter-from-class="opacity-0" enter-active-class="transition-all duration-500 ease-in"
                   leave-to-class="opacity-0" leave-active-class="transition-all duration-500 ease-out absolute">
-        <img draggable="false" v-if="i===1" src="../../assets/cat1.webp" alt="" class="w-80 max-md:w-44 max-lg:w-56">
-        <img draggable="false" v-else-if="i===2" src="../../assets/cat3.webp" alt="" class="w-80 max-md:w-44 max-lg:w-56">
-        <img draggable="false" v-else src="../../assets/cat2.webp" alt="" class="w-80 max-md:w-44 max-lg:w-56">
+        <img draggable="false" v-if="i===1" src="../../assets/cat1.webp" alt="" class="w-72 max-md:w-44 max-lg:w-56">
+        <img draggable="false" v-else-if="i===2" src="../../assets/cat3.webp" alt="" class="w-72 max-md:w-44 max-lg:w-56">
+        <img draggable="false" v-else src="../../assets/cat2.webp" alt="" class="w-72 max-md:w-44 max-lg:w-56">
       </Transition>
     </div>
   </FlexMinified>
 </template>
-
-<style scoped>
-
-</style>

@@ -29,7 +29,7 @@ const {artists} = useAudioPlayerStore();
             <img aria-hidden="false"
                  draggable="false"
                  loading="lazy"
-                 class=" max-sm:size-60 min-[1921px]:size-72 sm:size-56 lg:size-60 2xl:size-44 rounded-full hover:animate-pulse"
+                 class=" max-sm:size-52 min-[1921px]:size-72 sm:size-56 lg:size-60 2xl:size-44 rounded-full hover:animate-pulse"
                  :src="artist.src" data-testid="card-image"  :alt="artist.name + '_Logo'">
           </a>
         </FlexMinified>

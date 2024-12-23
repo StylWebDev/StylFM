@@ -11,9 +11,4 @@ import TheFooter from "./components/TheFooter.vue";
     <Artists/>
     <TheFooter class="sm:hidden" />
   </FlexMinified>
-
 </template>
-
-<style scoped>
-
-</style>
