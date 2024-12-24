@@ -39,7 +39,3 @@ const {artists} = useAudioPlayerStore() ;
     </GridMinified>
   </div>
 </template>
-
-<style scoped>
-
-</style>
